@@ -365,7 +365,7 @@
 		}
 		updateLocalStorage();
 
-		goto('/splits');
+		goto('/splits.html');
 	}
 </script>
 
