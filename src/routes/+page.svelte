@@ -377,7 +377,7 @@
 
 <Calculate bind:calculate />
 
-<TimeCompontent on:updateCalculation={updateCalculation} {time} {calculate} />
+<TimeCompontent on:updateCalculation={updateCalculation} bind:time {calculate} />
 <DistanceComponent
 	on:setDistanceUnits={handleSettingDistanceUnits}
 	on:updateDistance={() => updateDistance()}
