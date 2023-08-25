@@ -10,7 +10,7 @@
 	const allUnits: Units[] = ['kilometer', 'mile', 'meter', 'yard'];
 </script>
 
-<h3>Split times printout</h3>
+<h4>Split times printout</h4>
 <div class="flex items-center my-5">
 	<label for="custom-pace">Split at</label>
 	<div class="join ml-2">
@@ -22,7 +22,7 @@
 			id="distance"
 		/>
 		<select
-			class="join-item select select-xs sm:select-sm select-bordered"
+			class="join-item select select-xs md:select-sm select-bordered"
 			id="split-unit"
 			name="split-unit"
 			bind:value={splitUnit}

@@ -11,7 +11,7 @@
 	export let calculate: Calculation;
 </script>
 
-<h3>Distance</h3>
+<h4>Distance</h4>
 <div class="flex">
 	<div class="join">
 		<input

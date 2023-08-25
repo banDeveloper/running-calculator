@@ -22,9 +22,9 @@
 	let customePaceEnabled = false;
 </script>
 
-<h3>Pace</h3>
+<h4>Pace</h4>
 
-<div class="sm:flex">
+<div class="sm:flex sm:items-center">
 	{#if customePaceEnabled == false}
 		<input
 			bind:value={displayedPace.minutes}
@@ -46,7 +46,7 @@
 			id="pace-seconds"
 		/>
 		<label for="pace-seconds">sec</label>
-		<div class="join">
+		<div class="join items-center">
 			<span class="join-item px-1">per</span>
 			<DistanceUnitButton
 				dispatchFunction={() => dispatch('setPaceUnits', 'metric')}

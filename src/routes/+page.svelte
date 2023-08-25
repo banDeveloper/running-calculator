@@ -106,7 +106,7 @@
 	let pacePer200 = 0;
 	let pacePer400 = 0;
 
-	let calculate: Calculation = 'time';
+	let calculate: Calculation = 'pace';
 
 	$: canDisplayCumulative =
 		displayedDistance > 0 && (time.minutes > 0 || time.seconds > 0 || time.hours > 0);
@@ -397,8 +397,8 @@
 	{pacePer400}
 />
 
-<button on:click={handleReset} class="btn btn-outline btn-xs md:btn-sm btn-error">Reset</button>
-
 {#if canDisplayCumulative}
 	<Splits bind:splitDistance bind:splitUnit on:hanleOpenPrintout={hanleOpenPrintout} />
 {/if}
+
+<button on:click={handleReset} class="btn btn-outline btn-xs md:btn-sm btn-error">Reset</button>

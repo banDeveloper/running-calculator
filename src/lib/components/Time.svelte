@@ -8,7 +8,7 @@
 	export let calculate: Calculation;
 </script>
 
-<h3>Time</h3>
+<h4>Time</h4>
 
 <input
 	disabled={calculate == 'time'}
