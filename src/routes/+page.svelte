@@ -389,8 +389,8 @@
 	on:updateCustomPace={() => updateCustomPace()}
 	on:updatePace={() => updatePace()}
 	{displayedPace}
-	{customPace}
-	{customDistance}
+	bind:customPace
+	bind:customDistance
 	{calculate}
 	{pacePer100}
 	{pacePer200}
